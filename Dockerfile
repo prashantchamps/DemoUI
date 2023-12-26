@@ -10,7 +10,7 @@ ENV REACT_APP_POST_LOGOUT_REDIRECT_URI ${REACT_APP_POST_LOGOUT_REDIRECT_URI}
 WORKDIR /app
 COPY package.json .
 COPY yarn.lock .
-RUN yarn install --production
+RUN yarn install
 COPY . .
 RUN yarn build
 EXPOSE 80
