@@ -21,5 +21,5 @@ export const msalConfig = {
 };
 
 export const loginRequest = {
-  scopes: ["api://8e88d795-9878-4725-8f49-7280f3bf203c/.default"]
+  scopes: [`api://${process.env.REACT_APP_CLIENT_ID}/.default`]
 };
