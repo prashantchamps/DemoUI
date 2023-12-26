@@ -8,8 +8,8 @@ export const msalConfig = {
     postLogoutRedirectUri: process.env.REACT_APP_POST_LOGOUT_REDIRECT_URI
   },
   cache: {
-    cacheLocation: 'localStorage', // This configures where your cache will be stored
-    storeAuthStateInCookie: false, // Set this to "true" if you are having issues on IE11 or Edge
+    cacheLocation: 'localStorage',
+    storeAuthStateInCookie: false,
   },
   system: {
     loggerOptions: {
